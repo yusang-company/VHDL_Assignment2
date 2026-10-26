@@ -1,15 +1,15 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity mux8_1 is
+entity prob2 is
     port (
         a, b, c, d, e, f, g, h : in std_logic;                   -- 입력 핀 8개
         sel                    : in std_logic_vector(2 downto 0); -- 선택 핀 3비트
         y                      : out std_logic                    -- 출력 핀 1개
     );
-end entity mux8_1;
+end entity prob2;
 
-architecture bhv of mux8_1 is
+architecture bhv of prob2 is
 begin
     process(a, b, c, d, e, f, g, h, sel)
     begin
